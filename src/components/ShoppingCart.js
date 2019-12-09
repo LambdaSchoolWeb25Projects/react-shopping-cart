@@ -8,6 +8,7 @@ import Item from './ShoppingCartItem';
 // remove all instances of props
 function ShoppingCart(){
 	const {cart} = useContext(CartContext);
+	//console.log(removeItem);
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
 			return acc + value.price;
