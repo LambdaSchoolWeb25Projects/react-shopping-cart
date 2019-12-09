@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 // remove all instances of props
 const Navigation() {
+	const {cart} = useContext(CartContext);
 	return (
 		<div className="navigation">
 			<NavLink to="/">Products</NavLink>
