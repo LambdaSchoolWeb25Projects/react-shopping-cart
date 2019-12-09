@@ -4,7 +4,7 @@ import { CartContext } from '../contexts/CartContext';
 import { NavLink } from 'react-router-dom';
 
 // remove all instances of props
-const Navigation() {
+function Navigation() {
 	const {cart} = useContext(CartContext);
 	return (
 		<div className="navigation">

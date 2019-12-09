@@ -6,9 +6,9 @@ import { CartContext } from '../contexts/CartContext';
 import Item from './ShoppingCartItem';
 
 // remove all instances of props
-const ShoppingCart(){
+function ShoppingCart(){
+	const {cart} = useContext(CartContext);
 	const getCartTotal = () => {
-		const {cart} = useContext(CartContext);
 		return cart.reduce((acc, value) => {
 			return acc + value.price;
 		}, 0).toFixed(2);

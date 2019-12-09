@@ -6,18 +6,21 @@ import { ProductContext } from '../contexts/ProductContext';
 import Product from './Product';
 
 // remove all instances of props
-const Products() {
+// replace const w/ function or 
+const Products = () => {
 	const { products, addItem } = useContext(ProductContext);
 
 	return (
 		<div className="products-container">
-			{products.map(product => (
+			{products.map(product => {
+				return (
 				<Product
 					key={product.id}
 					product={product}
 					addItem={addItem}
 				/>
-			))}
+				)
+})}
 		</div>
 	);
 };
