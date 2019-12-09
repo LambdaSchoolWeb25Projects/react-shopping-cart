@@ -5,8 +5,8 @@ import { ProductContext } from '../contexts/ProductContext';
 // Components
 import Product from './Product';
 
-// remove all instances of props
-// replace const w/ function or 
+// remove all instances of props and
+// refactor to const Products = () => { or function Products(){
 const Products = () => {
 	const { products, addItem } = useContext(ProductContext);
 

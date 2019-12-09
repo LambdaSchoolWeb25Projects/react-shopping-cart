@@ -26,10 +26,15 @@ function App() {
 		setCart([...cart, item])
 	};
 
+	const removeItem = itemRemove = (id) => (
+		{
+		setCart([...cart, itemRemove])
+	});
+
 	return (
 		<ProductContext.Provider value={{products, addItem}}>
 			<div className="App">
-				<CartContext.Provider value={{cart}}>
+				<CartContext.Provider value={{cart, removeItem}}>
 					<Navigation cart={cart} />
 				</CartContext.Provider>
 

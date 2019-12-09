@@ -1,4 +1,4 @@
-// import useContext hook and ProductContext
+// import useContext hook and CartContext
 import React, { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
 
